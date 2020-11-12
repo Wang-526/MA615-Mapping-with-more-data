@@ -1,0 +1,13 @@
+name: MA615-Mapping-with-more-data
+title: MA615-Mapping-with-more-data
+username:
+account: yuxiwang2020
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3214958
+bundleId: 3850067
+url: https://yuxiwang2020.shinyapps.io/MA615-Mapping-with-more-data/
+when: 1605150611.07016
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Assignment.pdf|clear.R|hurricane.csv|Mapping Extended.Rmd|PublicAssistanceFundedProjectsDetails.csv.zip|README.md
