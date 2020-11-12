@@ -1,7 +1,6 @@
 ---
 title: "Mapping Extended"
-subtitle: "How does "
-author: "Yuelin Jiang"
+author: "Yuelin Jiang, Yuxi Wang"
 date: "11/11/2020"
 output: pdf_document
 ---
@@ -75,7 +74,7 @@ sandy <- merge(MainStates,sandy,by=c("region","subregion"))
 ```
 
 ### Make map plots of Hurricane Harvey's received federal funds by county.
-```{r} 
+```{r warning=FALSE} 
 harveyPlot <- ggplot() + 
   geom_polygon(data=MainStates, aes(x=long, y=lat, group=group),colour="black",fill="white") + 
   geom_polygon(data=harvey, aes(x = long, y = lat, group = group, fill = cut)) + 
@@ -90,11 +89,11 @@ harveyPlot
 ```
 
 ### Make map plots of Hurricane Sandy's received federal funds by county
-```{r}
+```{r warning=FALSE}
 sandyPlot <- ggplot() + 
   geom_polygon(data=MainStates, aes(x=long, y=lat, group=group),colour="black",fill="white")+
   geom_polygon(data=sandy, aes(x = long, y = lat, group = group, fill = cut))+
-  scale_fill_brewer(palette="yellows")+
+  scale_fill_brewer(palette="greens")+
   geom_path(data=Track_Sandy, aes(longitude, latitude),color="red")+
   labs(fill="proportion of obligated fedral fund") + 
   ggtitle("Sandy-2012") +
